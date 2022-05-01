@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&family=Raleway:wght@300;600;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: #333333; */
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url("./images/background2.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    padding: 0 100px;
+}
+
+label span{
+    color: #ffffff;
+}
+
+
+label.logo{
+    font-size: 35px;
+    line-height: 80px;
+    color: #f06a4d;
+    font-weight: bold;
+    padding: 0 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+   text-transform: uppercase;
+}
+
+nav ul li a{
+    font-size: 17px;
+}
+ a.active, a:hover{
+     color: #f06a4d;
+     transition: 0.5s;
+ }
+
+ .menu{
+     color: #f06a4d;
+     margin-left: 20px;
+     line-height: 80px;
+     cursor: pointer;
+ }
+
+ /*name-container */
+
+ .name-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+ }
+
+ .name-container p {
+    font-size: 3.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .header{
+      font-size: 100px;
+      font-weight: 100;
+      font-family: Poppins;
+      line-height: 7rem;
+  }
+
+  .designation{
+    font-size: 120px;
+    font-weight: 900;
+    font-family: Raleway;
+    line-height: 6.5rem;
+  }
+
+  .contact{
+    background-color: #f06a4d;
+    width: 11%;
+    padding: 8px 10px;
+    margin: 10px 0 0 6px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /*About me */
+
+  .about-me{
+      height: 100vh;
+      background-color: #232323;
+      padding: 30px;
+  }
+
+  .about-me h1{
+      text-align: center;
+      color: #f06a4d;
+      font-weight: 500;
+      font-family: Poppins;
+      /* position: relative; */
+  }
+
+  .about-me h1::before{
+      content: "About";
+      position: absolute;
+      padding-left: 25px;
+      /* font-size: 150px; */
+      transform: scale(2.5); /* study */
+      color: gray;
+      opacity: 0.1;
+  }
+
+  .content{
+      display: flex;
+      padding: 0 100px;
+  }
+
+  .left-side{
+      width: 50%;
+      margin: 0 10px;
+  }
+
+  .picture{
+    background-image: url("./images/background.jpg");
+    /* background-size: cover; */
+    /* height: 400px; */
+  }
+
+  .picture-container{
+      border: 10px solid #f06a4d;
+      width: 400px;
+      position: relative;
+      height: 450px ;
+      /* margin: 0 20px; */
+  }
+  .right-side{
+    width: 50%;
+}
+
+
+  .name-container p span.typed-text {
+    font-weight: normal;
+    color: #f06a4d;
+  }
+
+  .name-container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+
+  .name-container p span.cursor.typing {
+    animation: none;
+  }
+
+  
+
+ h1, h2{
+     font-weight: 200;
+     margin: 0.4rem;
+ }
+
+ h1{
+     font-size: 3.5rem;
+ }
+
+ h2{
+     font-size: 2rem;
+     color: #aaa;
+ }
+
+ @media(min-width:1200px){
+     p{
+         font-size: 5rem;
+     }
+ }
+ @media(max-width:800px){
+     .name-container{
+         padding: 0 1rem;
+     }
+     p{
+         font-size: 3rem;
+     }
+ }
+
+ @media(max-width:500px){
+    p{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
