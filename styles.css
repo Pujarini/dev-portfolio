@@ -13,11 +13,11 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    background-image: url("./images/background2.jpg");
-    background-size: cover;
-    background-position: top;
     height: 100vh;
     padding: 0 100px;
+    background-color: #333333;
+    background-size: cover;
+    background-position: top;
 }
 
 label span{
@@ -117,7 +117,6 @@ nav ul li a{
       color: #f06a4d;
       font-weight: 500;
       font-family: Poppins;
-      /* position: relative; */
   }
 
   .about-me h1::before{
@@ -141,9 +140,14 @@ nav ul li a{
   }
 
   .picture{
-    background-image: url("./images/background.jpg");
-    /* background-size: cover; */
-    /* height: 400px; */
+    border-radius: 100%;
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+ img{
+     
   }
 
   .picture-container{
@@ -151,10 +155,12 @@ nav ul li a{
       width: 400px;
       position: relative;
       height: 450px ;
+      float: right;
       /* margin: 0 20px; */
   }
   .right-side{
     width: 50%;
+    margin: 0px 15px;
 }
 
 
@@ -191,6 +197,146 @@ nav ul li a{
      color: #aaa;
  }
 
+ .content-header{
+     font-size: 20px;
+     margin-bottom: 10px;
+ }
+
+ .content-header span{
+     color: #f06a4d;
+ }
+
+ .user-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+    text-align: center;
+ }
+
+ .user-info li{
+     font-size: 18px;
+     align-items: center;
+     color: #f06a4d;
+ }
+
+ .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+ }
+
+ .social-media i{
+     margin: 0px 10px;
+     border: 1px solid white;
+     padding: 5px;
+ }
+
+ /*Project*/
+
+ .project-section{
+    height: 100vh;
+    background-image: none;
+    /* background-color: #232323; */
+    padding: 30px;
+}
+
+ .project-section h1{
+    text-align: center;
+    color: #f06a4d;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.project-section h1::before{
+    content: "Projects";
+    position: absolute;
+    padding-left: 10px;
+    /* font-size: 150px; */
+    transform: scale(2); /* study */
+    color: gray;
+    opacity: 0.1;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0px;
+    flex-wrap: wrap;
+} 
+
+.project-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+    margin: 50px;
+    height: 100px;
+}
+
+.project-card p{
+    font-size: 20px;
+}
+.project-card h1{
+    font-size: 20px;
+    color: white;
+}
+
+.project-card button{
+    background-color: #f06a4d;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+}
+
+/*Blogs*/
+.blogs{
+    height: 100vh;
+    background-image: none;
+    /* background-color: #232323; */
+    padding: 30px;
+}
+
+ .blogs h1{
+    text-align: center;
+    color: #f06a4d;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.blogs h1::before{
+    content: "Blogs";
+    position: absolute;
+    padding-left: 10px;
+    /* font-size: 150px; */
+    transform: scale(2); /* study */
+    color: gray;
+    opacity: 0.1;
+}
+
+
+
+
+
+/*contact*/
+.contact-me{
+    background-color: #f06a4d;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+}
+
+.contact-me h1{
+    text-align: center;
+    font-weight: 600;
+}
+
+ 
  @media(min-width:1200px){
      p{
          font-size: 5rem;
