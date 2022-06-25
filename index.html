@@ -16,21 +16,21 @@
        <nav>
            <label class="logo">Pujarini <span>Jena</span></label>
            <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#" class="active">About Me</a></li>
-               <li><a href="#">Projects</a></li>
-               <li><a href="#">Blogs</a></li>
-               <li><a href="#">Contact Me</a></li>
+               <li><a href="#home" class="active">Home</a></li>
+               <li><a href="#me-section">About Me</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#blogs">Blogs</a></li>
+               <li><a href="#contact">Contact Me</a></li>
            </ul>
            <div ><i class="fa-solid fa-bars-staggered menu"></i></div>
        </nav>
     </div>
-    <div class="name-container">
+    <div class="name-container" id="home">
         <div class="header">I'm a</div>
         <div class="designation">Software Developer<span style="color:#f06a4d ;">.</span></div>
         <span class="contact">Contact Me</span>
     </div> 
-    <div class="about-me">
+    <div class="about-me" id="me-section">
        <h1>About Me</h1>
        <div class="content">
            <div class="left-side">
@@ -56,56 +56,102 @@
            </div>
        </div>
     </div>
-    <div class="project-section"><h1>Projects</h1>
+    <div class="project-section" id="projects"><h1>Projects</h1>
 
         <div class="projects">
-            <div class="project-card">
-                <!-- <img src="./images/background2.jpg" alt="dummy img"/> -->
-                <h1>Project 1</h1>
-                <p>Some description about Project</p>
-                <p><button>See Code</button></p>
-                <p><button>See Demo</button></p>
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="front-card">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1720&q=80" alt="Lago di Braies">
+                            <p>My Portfolio</p>
+                        </div>
+                        <div class="back-card">back description</div>
+                    </div>
+                </div>
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="front-card">
+                            <img src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2938&q=80" alt="Lago di Braies">
+                            <p>AirBnB clone</p>
+                        </div>
+                        <div class="back-card">
+                            <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sit amet diam luctus tincidunt. </p>
+                            <div class="button-container">
+                            <button>See demo</button>
+                            <button>Find code</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="front-card">
+                            <img src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1644&q=80" alt="Lago di Braies">
+                            <p>Face detection App</p>
+                        </div>
+                        <div class="back-card">back description</div>
+                    </div>
+                </div>
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="front-card">
+                            <img src="https://images.unsplash.com/photo-1609554496796-c345a5335ceb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Lago di Braies">
+                            <p>Crypto Hunter</p>
+                        </div>
+                        <div class="back-card">back description</div>
+                    </div>
+                </div>
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="front-card">
+                            <img src="https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Lago di Braies">
+                            <p>Coming</p>
+                        </div>
+                        <div class="back-card">Working on a Link.tree clone using React</div>
+                    </div>
+                </div>
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                        <div class="front-card">
+                        <img src="https://images.unsplash.com/photo-1434470173287-201d57ca8c95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Lago di Braies">
+                        <p>Soon</p>
+                    </div>
+                        <div class="back-card">Working on a next.js portfolio</div>
+                    </div>
+                </div>
             </div>
-            <div class="project-card">
-                <!-- <img src="./images/background2.jpg" alt="dummy img"/> -->
-                <h1>Project 1</h1>
-                <p>Some description about Project</p>
-                <p><button>See Code</button></p>
-                <p><button>See Demo</button></p>
-            </div>
-            <div class="project-card">
-                <!-- <img src="./images/background2.jpg" alt="dummy img"/> -->
-                <h1>Project 1</h1>
-                <p>Some description about Project</p>
-                <p><button>See Code</button></p>
-                <p><button>See Demo</button></p>
-            </div>
-            <div class="project-card">
-                <!-- <img src="./images/background2.jpg" alt="dummy img"/> -->
-                <h1>Project 1</h1>
-                <p>Some description about Project</p>
-                <p><button>See Code</button></p>
-                <p><button>See Demo</button></p>
-            </div>
-            <div class="project-card">
-                <!-- <img src="./images/background2.jpg" alt="dummy img"/> -->
-                <h1>Project 1</h1>
-                <p>Some description about Project</p>
-                <p><button>See Code</button></p>
-                <p><button>See Demo</button></p>
-            </div>
-            
         </div>
 
         
     </div>
-    <div class="blogs"><h1>Blogs</h1></div>
-    <div class="contact-me">
+    <div class="blogs" id="blogs">
+        <h1>My Blogs</h1>
+        <div class="blogs-container">
+            <div class="panel active" style="background-image: url('https://img.freepik.com/free-vector/blogging-isometric-icon-with-character-writing-post-3d_1284-63083.jpg?t=st=1656107627~exp=1656108227~hmac=bb1269ef8ca9e4948663fe7201b97c0a411f2a18a57c199aa1320c996a5e1f35&w=1380')">
+                <a href="https://roadsidecoder.hashnode.dev/javascript-interview-questions-objects-output-based-destructuring-object" target="__blank">JavaScript Interview Questions on Objects</a>
+            </div>
+            <div class="panel" style="background-image: url('https://img.freepik.com/free-vector/blogging-concept-illustration_114360-1038.jpg?t=st=1656107627~exp=1656108227~hmac=8b26055ec1f80eb2ce4ae25532a6244c5374279c2679733bb261c0ccad54e502&w=1380')">
+                <a href="https://roadsidecoder.hashnode.dev/how-to-git-it" target="__blank">What is Git?</a>
+            </div>
+            <div class="panel" style="background-image: url('https://img.freepik.com/free-vector/hand-drawn-data-concept-illustrated_23-2149104874.jpg?t=st=1656107470~exp=1656108070~hmac=d6fdb6286840cfaa5f49f7b9107c6c67041d2f3436ae5a070d489761fafb7838&w=1800')">
+                <a href="https://roadsidecoder.hashnode.dev/javascript-interview-questions-on-var-let-and-const" target="__blank">Var, Let and const in JS</a>
+            </div>
+            <div class="panel" style="background-image: url('https://img.freepik.com/free-vector/startup-life-concept-illustration_114360-1068.jpg?t=st=1656107470~exp=1656108070~hmac=5fd4c94d045cef1c4ae8fc89282f2206b88d093ec2bc26e5834048a2a43c1277&w=1380')">
+                <a href="https://roadsidecoder.hashnode.dev/javascript-interview-questions-currying-output-based-questions-partial-application-and-more" target="__blank">Currying in JS</a>
+            </div>
+            <div class="panel" style="background-image: url('https://img.freepik.com/free-vector/blogging-illustration-concept_114360-788.jpg?t=st=1656109154~exp=1656109754~hmac=c9bd17ed0e49973e059f972fc346030ad7fc5a6290a13129858e864fcc07a651&w=2000')">
+                <a href="https://roadsidecoder.hashnode.dev/" target="__blank">Read more blogs on Hashnode</a>
+            </div>
+        </div>
+</div>
+    <div class="contact-me" id="contact">
         <h1>Contact me</h1>
         <div class="contact-me--details">
                 <p> <i class="fa-regular fa-envelope"></i> <br/><a href="mailto:pujarini97@gmail.com">pujarini97@gmail.com</a>
                 <p> <i class="fa-brands fa-twitter"></i> <br/><a href="https://twitter.com/pujarini_j">pujarini_j</a></p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

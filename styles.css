@@ -146,10 +146,6 @@ nav ul li a{
     height: 100px;
   }
 
- img{
-     
-  }
-
   .picture-container{
     border: 10px solid #f06a4d;
     width: 400px;
@@ -247,7 +243,7 @@ nav ul li a{
  /*Project*/
 
  .project-section{
-    height: 100vh;
+    height: 150vh;
     background-image: none;
     /* background-color: #232323; */
     padding: 30px;
@@ -272,44 +268,124 @@ nav ul li a{
 
 .projects{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 100px 0px;
     flex-wrap: wrap;
-} 
-
-.project-card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    text-align: center;
-    margin: 50px;
-    height: 100px;
 }
 
-.project-card p{
-    font-size: 20px;
-}
-.project-card h1{
-    font-size: 20px;
-    color: white;
+.flip-card-container{
+    width: 300px;
+    height: 400px;
+    border:2px solid white;
+    margin: 25px;
+    border-radius: 10px;
 }
 
-.project-card button{
-    background-color: #f06a4d;
-    color: #ffffff;
-    text-align: center;
-    cursor: pointer;
-    padding: 12px;
+.flip-card{
+    position: relative;
     width: 100%;
-    font-size: 18px;
+    height: 100%;
+   
+}
+
+.front-card, .back-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+.front-card{
+    color:white;
+}
+
+.front-card p{
+    font-size: 25px;
+    position: absolute;
+    font-weight: 500;
+    bottom:10px;
+    right: 5px;
+    padding: 10px;
+}
+
+.front-card img{
+    object-fit: cover;
+    height: 395px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.back-card p{
+    font-size: 15px;
+}
+
+.back-card{
+    background-color: grayslate;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.back-card img{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.back-card p{
+    text-align: center;
+   margin-bottom: 10px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-container button{
+    color: white;
+    background-color: #f06a4d;
+    width: 100px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    height:40px;
+    border: none;
+}
+
+.card {
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+.flip-card-container:hover .front-card {
+    transform: rotateY(180deg);
+}
+
+.flip-card-container:hover .back-card {
+    transform: rotateY(1deg);
 }
 
 /*Blogs*/
 .blogs{
-    height: 100vh;
-    background-image: none;
-    /* background-color: #232323; */
+    height: 150vh;
+    background-color: #232323;
     padding: 30px;
 }
 
@@ -321,13 +397,69 @@ nav ul li a{
 }
 
 .blogs h1::before{
-    content: "Blogs";
+    content: "My Blogs";
     position: absolute;
     padding-left: 10px;
     /* font-size: 150px; */
     transform: scale(2); /* study */
     color: gray;
     opacity: 0.1;
+}
+
+.blogs-container{
+    display: flex;
+    width: 1250px;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    object-fit: cover;
+    position: relative;
+    height: 70vh;
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    flex: 0.5;
+    transition: flex 0.5s ease-in;
+}
+
+.panel a{
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    /* color: black; */
+    
+}
+
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active a{
+ opacity: 1;
+ transition: opacity 0.5s ease-in 0.2s;
+ color: black;
+ font-weight: 600;
+}
+
+@media(max-width:480px){
+    .container{
+        width: 50vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
 }
 
 
